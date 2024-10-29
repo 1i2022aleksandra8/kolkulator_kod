@@ -14,8 +14,25 @@
 
 <script>
 const number1 = parseInt(prompt('Wpisz pierwszą liczbę: '));
-
-
+const number2 = parseInt(prompt('Wpisz pierwszą liczbę: '));
+const sign = prompt('Podaj znak działania jakie chcesz wykonać (+, -, * lub / )');
+if (isNaN(number1) || isNaN(number2)) {
+    document.write('<p>wprowadź poprawne liczby</p>');
+} else {
+    if (sign == '+') {
+        document.write('<p>Wynik dodawania: ' + (number1 + number2) + '</p>');
+    } else if (sign == '-') {
+        document.write('<p>Wynik odejmowania: ' + (number1 - number2) + '</p>');
+    } else if (sign == '*') {
+        document.write('<p>Wynik mnożenia: ' + number1 * number2 + '</p>');
+    } else if (sign == '/') {
+        number 2 === 0
+        ? document.write('<p>Nie można dzielić przez 0</p>')
+        : document.write('<p>Wynik dzielenia to: ' + number1 / number2 + '</p>');
+    }else {
+        document.write('<p>Wprowadź poprawnie znak dzielenia:</p>');
+    }
+}
 
 
 </script>
